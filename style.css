@@ -49,7 +49,6 @@ header nav ol li:hover {
   color: #62a0ff;
 }
 
-
 ol li::before {
   content: counter(li) ".";
   color: #62a0ff;
@@ -76,7 +75,7 @@ div.side-info.left {
   align-items: center;
   justify-content: flex-end;
   width: 80px;
-  height: 300px;
+  height: 280px;
   position: fixed;
   bottom: 0px;
   left: 20px;
@@ -91,8 +90,6 @@ div.side-info.left ul {
   height: 100%; /* Set a fixed height */
 }
 
-
-
 div.side-info.left ul::after {
   content: "";
   display: block;
@@ -102,11 +99,55 @@ div.side-info.left ul::after {
   background-color: #dce7ff;
 }
 
-div.side-info ul {
+div.side-info.left ul {
   list-style: none;
 }
 
-.github, .linkedin, .gmail {
+div.side-info.right {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80px;
+  height: 280px;
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  left: auto;
+}
+
+div.side-info.right a {
+  color: #dce7ff;
+  writing-mode: vertical-rl;
+  font-family: "Space Mono", monospace;
+}
+
+
+div.side-info.right::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: #dce7ff;
+}
+
+
+
+.github,
+.linkedin,
+.gmail {
   width: 2rem;
-  filter: invert(98%) sepia(79%) saturate(7252%) hue-rotate(178deg) brightness(104%) contrast(101%);
+  filter: invert(98%) sepia(79%) saturate(7252%) hue-rotate(178deg)
+    brightness(104%) contrast(101%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.github:hover,
+.linkedin:hover,
+.gmail:hover {
+  transform: translateY(-5px);
+  filter: invert(56%) sepia(68%) saturate(1440%) hue-rotate(192deg)
+    brightness(100%) contrast(103%);
 }
