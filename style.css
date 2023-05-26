@@ -75,7 +75,7 @@ div.side-info.left {
   align-items: center;
   justify-content: flex-end;
   width: 80px;
-  height: 280px;
+  height: 300px;
   position: fixed;
   bottom: 0px;
   left: 20px;
@@ -110,7 +110,7 @@ div.side-info.right {
   align-items: center;
   justify-content: flex-end;
   width: 80px;
-  height: 280px;
+  height: 400px;
   position: fixed;
   bottom: 0px;
   right: 20px;
@@ -118,11 +118,22 @@ div.side-info.right {
 }
 
 div.side-info.right a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; /* Set a fixed height */
   color: #dce7ff;
   writing-mode: vertical-rl;
   font-family: "Space Mono", monospace;
+  transition: transform 0.3s ease-in-out;
+  letter-spacing: 0.1em;
 }
 
+.side-info.right a:hover {
+  transform: translateY(-5px);
+  color: #62a0ff;
+}
 
 div.side-info.right::after {
   content: "";
@@ -132,8 +143,6 @@ div.side-info.right::after {
   margin: 0px auto;
   background-color: #dce7ff;
 }
-
-
 
 .github,
 .linkedin,
