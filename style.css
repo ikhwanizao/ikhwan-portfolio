@@ -268,10 +268,11 @@ section.aboutme div.aboutme-content p {
   margin: 0px 0px 15px;
 }
 
-.skills-list {
-  margin-top: 20px;
+ul.skills-list {
+  margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
+  grid-template-columns: repeat(2, minmax(150px, 250px));
+  padding: 0px;
   overflow: hidden;
   list-style: none;
 }
@@ -280,7 +281,17 @@ ul.skills-list li {
   color: #dce7ff;
   position: relative;
   margin-bottom: 10px;
-  /* padding-left: 20px; */
+  padding-left: 30px;
   font-family: "Space Mono", monospace;
   font-size: 1.25rem;
+  left: 0px;
+}
+
+ul.skills-list li::before {
+  display: flex;
+  align-items: center;
+  content: "⊛";
+  position: absolute;
+  left: 0px;
+  color: #0071d7;
 }
