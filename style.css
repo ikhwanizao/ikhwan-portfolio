@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -74,7 +74,6 @@ a:visited {
 }
 
 div.side-info.left {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,12 +165,34 @@ img.gmail:hover {
     hue-rotate(192deg) brightness(100%) contrast(103%);
 }
 
-main section {
-  padding: 2% 20%;
+main {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 0px 200px;
 }
 
+section {
+  margin: 0px auto;
+  max-width: 1000px;
+}
+
+/* main section {
+  padding: 2% 20%;
+} */
+
 .pre-intro {
-  color: white;
+  /* color: white; */
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0px;
 }
 
 .pre-intro h1 {
@@ -183,6 +204,7 @@ main section {
 .pre-intro h2 {
   font-size: clamp(40px, 8vw, 80px);
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
   color: #dce7ff;
   line-height: 1.1;
 }
@@ -190,6 +212,7 @@ main section {
 .pre-intro h3 {
   font-size: clamp(40px, 8vw, 80px);
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
   color: #8892b0;
   line-height: 1.3;
 }
@@ -199,15 +222,16 @@ main section {
   line-height: 1.6;
   max-width: 600px;
   color: #dce7ff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 .pre-intro button {
   all: unset;
   cursor: pointer;
   font-family: "Space Mono", monospace;
-  margin-top: 40px;
+  margin-top: 56px;
   padding: 1rem 1.5rem;
   background-color: transparent;
   color: #0071d7;
@@ -217,5 +241,46 @@ main section {
 }
 
 .pre-intro button:hover {
-  box-shadow: 0px 0px 22px 5px rgba(0,113,215,0.75);
+  box-shadow: 0px 0px 22px 5px rgba(0, 113, 215, 0.75);
+}
+
+.section-title {
+  color: #dce7ff;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.75rem;
+}
+
+section.aboutme {
+  max-width: 900px;
+  padding: 100px 0px
+}
+
+.about-title {
+  margin: 10px 0px 40px;
+}
+
+section.aboutme div.aboutme-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #8892b0;
+  margin: 0px 0px 15px;
+}
+
+.skills-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  overflow: hidden;
+  list-style: none;
+}
+
+ul.skills-list li {
+  color: #dce7ff;
+  position: relative;
+  margin-bottom: 10px;
+  /* padding-left: 20px; */
+  font-family: "Space Mono", monospace;
+  font-size: 1.25rem;
 }
