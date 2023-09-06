@@ -170,12 +170,13 @@ main {
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding: 0px 200px;
+  padding: 0px 150px;
 }
 
 section {
   margin: 0px auto;
   max-width: 1000px;
+  padding: 100px 0px;
 }
 
 /* main section {
@@ -253,7 +254,6 @@ section {
 
 section.aboutme {
   max-width: 900px;
-  padding: 100px 0px
 }
 
 .about-title {
@@ -292,4 +292,48 @@ ul.skills-list li::before {
   position: absolute;
   left: 0px;
   color: #0071d7;
+}
+
+ul.projects {
+  margin-top: 40px;
+}
+
+ul.projects li {
+  overflow: hidden;
+  list-style: none;
+  display: flex;
+}
+
+ul.projects li div.project-screenshot img {
+  border-radius: 6px;
+  width: 800px;
+  max-width: 100%;
+}
+
+ul.projects li div.project-description {
+  color: #8892b0;
+  width: 100%;
+  padding: 0px 20px;
+  text-align: justify;
+}
+
+ul.projects li div.project-description span{
+  color: #62a0ff;
+}
+
+footer {
+  color: #dce7ff;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+@media only screen and (max-width: 1060px) {
+  ul.projects li {
+    flex-direction: column;
+  }
+
+  ul.projects li div.project-description {
+    padding: 20px 0px;
+  }
 }
