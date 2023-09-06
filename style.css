@@ -288,8 +288,6 @@ ul.skills-list li {
 }
 
 ul.skills-list li::before {
-  display: flex;
-  align-items: center;
   content: "⊛";
   position: absolute;
   left: 0px;
