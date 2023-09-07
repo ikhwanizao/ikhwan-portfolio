@@ -41,10 +41,10 @@ header nav {
 }
 
 header nav ol {
+  color: #dce7ff;
   display: flex;
   justify-content: space-around;
   list-style: none;
-  color: #dce7ff;
   counter-reset: li;
   transition: 0.5s ease-in-out;
 }
@@ -79,7 +79,6 @@ div.side-info.left {
   align-items: center;
   justify-content: flex-end;
   width: 80px;
-  height: 300px;
   position: fixed;
   bottom: 0px;
   left: 20px;
@@ -91,7 +90,11 @@ div.side-info.left ul {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100%; /* Set a fixed height */
+  height: 100%;
+}
+
+div.side-info.left ul li {
+  padding: 16px 0px;
 }
 
 div.side-info.left ul::after {
@@ -108,13 +111,11 @@ div.side-info.left ul {
 }
 
 div.side-info.right {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   width: 80px;
-  height: 400px;
   position: fixed;
   bottom: 0px;
   right: 20px;
@@ -122,11 +123,8 @@ div.side-info.right {
 }
 
 div.side-info.right a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%; /* Set a fixed height */
+  margin: 20px auto;
+  padding: 10px;
   color: #dce7ff;
   writing-mode: vertical-rl;
   font-family: "Space Mono", monospace;
@@ -184,15 +182,15 @@ section {
 } */
 
 .pre-intro {
-  /* color: white; */
+  overflow: hidden;
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
-  height: 100vh;
+  min-height: 100%;
+  width: 100%;
   padding: 0px;
 }
 
@@ -239,10 +237,6 @@ section {
   border: 1px solid #0071d7;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
-}
-
-.pre-intro button:hover {
-  box-shadow: 0px 0px 22px 5px rgba(0, 113, 215, 0.75);
 }
 
 .section-title {
@@ -315,17 +309,23 @@ ul.projects li div.project-description {
   width: 100%;
   padding: 0px 20px;
   text-align: justify;
+  word-spacing: -2px;
 }
 
-ul.projects li div.project-description span{
+ul.projects li div.project-description span {
   color: #62a0ff;
 }
 
 footer {
   color: #dce7ff;
+  font-family: "Space Mono", monospace;
   font-size: 0.75rem;
   text-align: center;
   padding: 20px 0px;
+}
+
+.socials {
+  display: none;
 }
 
 @media only screen and (max-width: 1060px) {
@@ -335,5 +335,33 @@ footer {
 
   ul.projects li div.project-description {
     padding: 20px 0px;
+  }
+
+  header nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .socials {
+    display: block;
+    max-width: 250px;
+    margin: 0px auto 16px;
+  }
+
+  .socials ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  div.side-info.right,
+  div.side-info.left {
+    display: none;
+  }
+
+  main {
+    padding: 0px 50px;
   }
 }
