@@ -8,4 +8,20 @@ export const projects = [
       "https://github.com/ikhwanizao/student-attendance-system-using-facial-recognition",
     screenshot: "assets/img/sasfr.png",
   },
+  {
+    id: "agecalc",
+    title: "Age Calculator App with Javascript",
+    description:
+      "Want to know how old you are? Just enter your date of birth in the app and click the button. We'll do the rest! The app has validations to ensure that you enter a valid date of birth. So whether you're born in 1990 or 2023, we've got you covered. Try it out today!",
+    githubRepo: "https://ikhwanizao.github.io/age-calculator-app",
+    screenshot: "assets/img/age-calculator.jpg",
+  },
+  {
+    id: "emsys",
+    title: "Simple Outlook Email Management System with PHP and MYSQL",
+    description:
+      "A PHP-powered email management system for Outlook.com. Effortlessly receive and send emails, manage your inbox, compose messages with ease, and leverage search and filtering capabilities. Simplify email management and boost productivity.",
+    githubRepo: "https://github.com/ikhwanizao/email_management_system",
+    screenshot: "assets/img/email-management-system.png",
+  },
 ];
