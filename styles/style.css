@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
@@ -299,12 +299,18 @@ ul.projects li {
 
 .project-title {
   line-height: normal;
+  font-weight: 700;
+  font-size: 1.75rem;
   font-family: "Space Mono", monospace;
   margin-bottom: 1em;
-  color: #62a0ff;
-  /* background: linear-gradient(to right, #62a0ff 0%, #0071d7 100%);
+
+  /** TEXT GRADIENT */
+  color: #5cae74;
+  background-image: -webkit-linear-gradient(45deg, #5cae74 33%, #91cdfc 69%);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 ul.projects li div.project-screenshot img {
