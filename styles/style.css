@@ -177,10 +177,6 @@ section {
   padding: 100px 0px;
 }
 
-/* main section {
-  padding: 2% 20%;
-} */
-
 .pre-intro {
   overflow: hidden;
   display: flex;
@@ -288,14 +284,27 @@ ul.skills-list li::before {
   color: #0071d7;
 }
 
-ul.projects {
+ul.projects li {
   margin-top: 40px;
 }
 
 ul.projects li {
   overflow: hidden;
   list-style: none;
+}
+
+.project-content {
   display: flex;
+}
+
+.project-title {
+  line-height: normal;
+  font-family: "Space Mono", monospace;
+  margin-bottom: 1em;
+  color: #62a0ff;
+  /* background: linear-gradient(to right, #62a0ff 0%, #0071d7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 ul.projects li div.project-screenshot img {
@@ -310,10 +319,15 @@ ul.projects li div.project-description {
   padding: 0px 20px;
   text-align: justify;
   word-spacing: -2px;
+  line-height: normal;
 }
 
 ul.projects li div.project-description span {
   color: #62a0ff;
+}
+
+.project-description .github-repo {
+  margin-top: 1em;
 }
 
 footer {
@@ -329,7 +343,7 @@ footer {
 }
 
 @media only screen and (max-width: 1060px) {
-  ul.projects li {
+  ul.projects .project-content {
     flex-direction: column;
   }
 

@@ -8,15 +8,15 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Muhammad Ikhwan</title>
   </head>
 
   <body>
     <header>
       <div class="logo">
-        <a href=""><img src="img/logo.png" alt="logo" /></a>
+        <a href=""><img src="assets/img/logo.png" alt="logo" /></a>
       </div>
       <nav>
         <ol>
@@ -32,7 +32,7 @@
         <li>
           <a href="https://github.com/ikhwanizao" target="_blank"
             ><img
-              src="img/github-mark/github-mark.png"
+              src="assets/img/github-mark/github-mark.png"
               alt="github-mark"
               class="github"
           /></a>
@@ -42,7 +42,7 @@
             href="https://www.linkedin.com/in/muhammadikhwan-zao/"
             target="_blank"
             ><img
-              src="img/linkedin_black_logo_icon_147114.png"
+              src="assets/img/linkedin_black_logo_icon_147114.png"
               alt="linkedin"
               class="linkedin"
           /></a>
@@ -50,7 +50,7 @@
         <li>
           <a href="mailto:muhammadikhwan32@gmail.com"
             ><img
-              src="img/gmail_icon-icons.com_59877.png"
+              src="assets/img/gmail_icon-icons.com_59877.png"
               alt="gmail"
               class="gmail"
           /></a>
@@ -71,7 +71,9 @@
           lasting impact. Committed to continuous learning and exceptional
           digital solutions.
         </p>
-        <a href="doc/Muhammad Ikhwan Resume.pdf" target="_blank"><button>Check out my resume!</button></a>
+        <a href="assets/doc/Muhammad Ikhwan Resume.pdf" target="_blank"
+          ><button>Check out my resume!</button></a
+        >
       </section>
 
       <section id="about" class="aboutme">
@@ -109,14 +111,8 @@
       <section id="projects" class="projects-section">
         <h2 class="section-title projects-title">Project</h2>
         <ul class="projects">
-          <li>
-            <div class="project-screenshot">
-              <a
-                href="https://github.com/ikhwanizao/student-attendance-system-using-facial-recognition"
-                target="_blank"
-                ><img src="img/sasfr.png" alt="" class="sasfr"
-              /></a>
-            </div>
+          <!-- <li id="sasfr">
+            
             <div class="project-description">
               I developed a Django-based system that uses
               <span>face recognition artificial intelligence</span> to help
@@ -125,9 +121,27 @@
               automatically scans the faces of students as they enter the
               classroom and records their attendance. The system also allows
               lecturers to view the attendance records of their students at any
-              time. <a href="https://github.com/ikhwanizao/student-attendance-system-using-facial-recognition"><span>https://github.com/ikhwanizao/student-attendance-system-using-facial-recognition</span></a>
+              time.
+              <div class="github-repo">
+                <a
+                  href="https://github.com/ikhwanizao/student-attendance-system-using-facial-recognition"
+                  ><span
+                    >https://github.com/ikhwanizao/student-attendance-system-using-facial-recognition</span
+                  ></a
+                >
+              </div>
             </div>
-          </li>
+
+            <div class="project-screenshot">
+              <a
+                href="https://github.com/ikhwanizao/student-attendance-system-using-facial-recognition"
+                target="_blank"
+                ><img
+                  src="assets/img/sasfr.png"
+                  alt="Screenshot of the main home page of student attendance system using facial recognition"
+              /></a>
+            </div>
+          </li> -->
         </ul>
       </section>
     </main>
@@ -137,7 +151,7 @@
           <li>
             <a href="https://github.com/ikhwanizao" target="_blank"
               ><img
-                src="img/github-mark/github-mark.png"
+                src="assets/img/github-mark/github-mark.png"
                 alt="github-mark"
                 class="github"
             /></a>
@@ -147,7 +161,7 @@
               href="https://www.linkedin.com/in/muhammadikhwan-zao/"
               target="_blank"
               ><img
-                src="img/linkedin_black_logo_icon_147114.png"
+                src="assets/img/linkedin_black_logo_icon_147114.png"
                 alt="linkedin"
                 class="linkedin"
             /></a>
@@ -155,7 +169,7 @@
           <li>
             <a href="mailto:muhammadikhwan32@gmail.com"
               ><img
-                src="img/gmail_icon-icons.com_59877.png"
+                src="assets/img/gmail_icon-icons.com_59877.png"
                 alt="gmail"
                 class="gmail"
             /></a>
@@ -164,5 +178,6 @@
       </div>
       <div>Built by Ikhwan & Inspired by Brittany Chiang</div>
     </footer>
+    <script type="module" src="scripts/app.js"></script>
   </body>
 </html>
