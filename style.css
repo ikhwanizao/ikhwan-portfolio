@@ -310,6 +310,7 @@ ul.projects li div.project-description {
   padding: 0px 20px;
   text-align: justify;
   word-spacing: -2px;
+  line-height: normal;
 }
 
 ul.projects li div.project-description span {
