@@ -18,7 +18,7 @@ export const projects = [
   },
   {
     id: "emsys",
-    title: "Simple Outlook Email Management System with PHP and MYSQL",
+    title: "Outlook Email Management System with PHP and MYSQL",
     description:
       "A PHP-powered email management system for Outlook.com. Effortlessly receive and send emails, manage your inbox, compose messages with ease, and leverage search and filtering capabilities. Simplify email management and boost productivity.",
     githubRepo: "https://github.com/ikhwanizao/email_management_system",
