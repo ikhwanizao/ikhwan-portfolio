@@ -288,7 +288,7 @@ ul.skills-list li::before {
   color: #0071d7;
 }
 
-ul.projects {
+ul.projects li {
   margin-top: 40px;
 }
 
@@ -315,6 +315,10 @@ ul.projects li div.project-description {
 
 ul.projects li div.project-description span {
   color: #62a0ff;
+}
+
+.project-description .github-repo {
+  margin-top: 1em;
 }
 
 footer {
