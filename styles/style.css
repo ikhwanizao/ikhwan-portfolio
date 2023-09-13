@@ -17,7 +17,7 @@ html {
 }
 
 header .logo img {
-  width: 80px;
+  width: 100%;
 }
 
 body {
@@ -26,13 +26,12 @@ body {
 }
 
 header {
-  padding: 0 40px;
+  padding: 0 2rem;
   font-family: "Space Mono", monospace;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 6rem;
 }
 
 header nav {
@@ -62,6 +61,7 @@ ol li::before {
 }
 
 .logo {
+  width: 80px;
   transition: 0.5s ease-in-out;
 }
 
@@ -226,7 +226,7 @@ section {
   all: unset;
   cursor: pointer;
   font-family: "Space Mono", monospace;
-  margin-top: 56px;
+  margin-top: 3rem;
   padding: 1rem 1.5rem;
   background-color: transparent;
   color: #0071d7;
@@ -261,6 +261,7 @@ section.aboutme div.aboutme-content p {
 ul.skills-list {
   margin-top: 30px;
   display: grid;
+  grid-column-gap: 1em;
   grid-template-columns: repeat(2, minmax(150px, 250px));
   padding: 0px;
   overflow: hidden;
@@ -363,6 +364,15 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  header {
+    padding: 1.5rem 0;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
   .socials {
     display: block;
     max-width: 250px;
@@ -382,6 +392,13 @@ footer {
   }
 
   main {
-    padding: 0px 50px;
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  ul.skills-list {
+    grid-template-columns: minmax(150px, 250px);
+    grid-row-gap: 1em;
   }
 }
