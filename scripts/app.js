@@ -4,7 +4,7 @@ let projectsHTML = "";
 
 projects.forEach((project, index) => {
   if (index % 2 === 0) {
-    projectsHTML += `<li id="${project.id}">
+    projectsHTML += `<li id="${project.id}" class="animation-reset js-project-items-animation-left">
     <h3 class="project-title">${project.title}</h3>
     <div class="project-content">
         <div class="project-screenshot">
@@ -30,31 +30,32 @@ projects.forEach((project, index) => {
     </div>
   </li>`;
   } else {
-    projectsHTML += `<li id="${project.id}">
-    <h3 class="project-title">${project.title}</h3>
-    <div class="project-content">
-    <div class="project-description">
-        ${project.description}
-        <div class="github-repo">
-            <a
-            href="${project.githubRepo}"
-            ><span
-                >${project.githubRepo}</span
-            ></a
-            >
+    projectsHTML += 
+    `<li id="${project.id}" class="animation-reset js-project-items-animation-right">
+        <h3 class="project-title">${project.title}</h3>
+        <div class="project-content">
+            <div class="project-description">
+            ${project.description}
+                <div class="github-repo">
+                    <a
+                    href="${project.githubRepo}"
+                    ><span
+                        >${project.githubRepo}</span
+                    ></a
+                    >
+                </div>
+            </div>
+            <div class="project-screenshot">
+                <a
+                    href="${project.githubRepo}"
+                    target="_blank"
+                    ><img
+                    src="${project.screenshot}"
+                    alt="Screenshot of ${project.title}"
+                /></a>
+            </div>
         </div>
-        </div>
-        <div class="project-screenshot">
-        <a
-            href="${project.githubRepo}"
-            target="_blank"
-            ><img
-            src="${project.screenshot}"
-            alt="Screenshot of ${project.title}"
-        /></a>
-        </div>
-    </div>
-  </li>`;
+    </li>`;
   }
 });
 
