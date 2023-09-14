@@ -10,26 +10,25 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/animations.js" async></script>
     <title>Muhammad Ikhwan</title>
   </head>
 
   <body>
     <header>
-      <div class="logo">
+      <div class="logo scale-in-center">
         <a href=""><img src="assets/img/logo.png" alt="logo" /></a>
-        <a href=""><img src="assets/img/logo.png" alt="logo" /></a>
-
       </div>
       <nav>
         <ol>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Portfolio</a></li>
-          <li><a href="">Education and Experience</a></li>
-          <li><a href="">Contact</a></li>
+          <li class="animation-reset js-nav-li"><a href="#about">About</a></li>
+          <li class="animation-reset js-nav-li"><a href="#projects">Portfolio</a></li>
+          <li class="animation-reset js-nav-li"><a href="">Education and Experience</a></li>
+          <li class="animation-reset js-nav-li"><a href="">Contact</a></li>
         </ol>
       </nav>
     </header>
-    <div class="side-info left">
+    <div class="animation-reset side-info left js-sideinfo-animation">
       <ul>
         <li>
           <a href="https://github.com/ikhwanizao" target="_blank"
@@ -59,29 +58,29 @@
         </li>
       </ul>
     </div>
-    <div class="side-info right">
+    <div class="animation-reset side-info right js-sideinfo-animation">
       <a href="mailto:muhammadikhwan32@gmail.com">muhammadikhwan32@gmail.com</a>
     </div>
     <main>
       <section class="pre-intro">
-        <h1>Hi, my name is</h1>
-        <h2>Ikhwan.</h2>
-        <h3>I'm a Web Developer.</h3>
-        <p>
+        <h1 class="animation-reset js-preintro-items">Hi, my name is</h1>
+        <h2 class="animation-reset js-preintro-items">Ikhwan.</h2>
+        <h3 class="animation-reset js-preintro-items">I'm a Web Developer.</h3>
+        <p class="animation-reset js-preintro-items">
           Passionate junior web developer skilled in cutting-edge technologies
           and elegant design. Specializes in user-friendly websites that make a
           lasting impact. Committed to continuous learning and exceptional
           digital solutions.
         </p>
-        <a href="assets/doc/Muhammad Ikhwan Resume.pdf" target="_blank"
+        <a class="animation-reset js-preintro-items" href="assets/doc/Muhammad Ikhwan Resume.pdf" target="_blank"
           ><button>Check out my resume!</button></a
         >
       </section>
 
       <section id="about" class="aboutme">
-        <h2 class="section-title about-title">About Me</h2>
-        <div class="aboutme-content">
-          <p>
+        <h2 class="animation-reset section-title about-title js-aboutme-animation">About Me</h2>
+        <div class="animation-reset aboutme-content js-aboutme-animation">
+          <p class="animation-reset js-aboutme-animation">
             Hi! My name is Ikhwan and I love building things. My web development
             interest sparked back when I was 13 during the Harlem Shake meme era
             where I stumbled upon a piece of Javascript code that would make the
@@ -92,21 +91,21 @@
             the element 'input' from 'password' to 'text' so that it would
             reveal the password in the input field.
           </p>
-          <p>
+          <p class="animation-reset js-aboutme-animation">
             As a web developer, I am fully aware that there is no end to
             learning technologies and things related to web development.
             Therefore, I am continuously in the process of learning new stuff on
             the internet.
           </p>
-          <p>Here are several technologies I have worked with so far:</p>
+          <p class="animation-reset js-aboutme-animation">Here are several technologies I have worked with so far:</p>
 
           <ul class="skills-list">
-            <li>Javascript</li>
-            <li>Python and Django</li>
-            <li>PHP and Laravel</li>
-            <li>Flutter</li>
-            <li>Wordpress</li>
-            <li>Outsystems</li>
+            <li class="animation-reset js-skills-items-animation">Javascript</li>
+            <li class="animation-reset js-skills-items-animation">Python and Django</li>
+            <li class="animation-reset js-skills-items-animation">PHP and Laravel</li>
+            <li class="animation-reset js-skills-items-animation">Flutter</li>
+            <li class="animation-reset js-skills-items-animation">Wordpress</li>
+            <li class="animation-reset js-skills-items-animation">Outsystems</li>
           </ul>
         </div>
       </section>
